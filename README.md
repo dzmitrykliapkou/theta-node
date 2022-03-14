@@ -34,6 +34,7 @@ services:
     container_name: theta-node
     restart: unless-stopped
     command:
+      - "theta"
       - "start"
       - "--config=/theta_mainnet/guardian_mainnet/node"
       - "--password"
